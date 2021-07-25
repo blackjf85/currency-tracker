@@ -1,0 +1,10 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 213px;
+    margin: 2.5%;
+}
