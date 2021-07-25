@@ -8,4 +8,14 @@ Changelog
 
 07/24/2021:
 
-- Implemented basic Header component and put basic functionality into place for the form component (changeHandler and onSubmit).
+- Implemented basic Header component
+
+- Implemented basic functionality for the form component (changeHandler and onSubmit).
+
+07/25/2021:
+
+- Added a date picker to form component.
+
+- Removed the onSubmit handler, anticipating that we will be displaying data dynamically as user enters a date rather than making them submit the form each time.
+
+-Added very basic styling to the form

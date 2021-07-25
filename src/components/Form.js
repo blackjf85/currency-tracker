@@ -1,11 +1,22 @@
-import React from 'react'
+import './Form.css';
 
-const Form = ({ onChange, onSubmit}) => {
+import React, { useState } from 'react';
+
+const Form = () => {
+
+    const [date, setDate] = useState('')
+
+    const onChange = (e) => {
+      setDate(e.target.value);
+      console.log(e.target.value)
+    }
+
     return (
         <div>
-            <form onSubmit={onSubmit}>
-            
+            <form>
+                <input id="date" type="date" onChange={onChange} value={date.value} />
             </form>
+            { date ? <h1>{date}</h1> : <h1>Please enter a date</h1>}
         </div>
     )
 }
