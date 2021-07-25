@@ -1,14 +1,8 @@
 import './Form.css';
 
-import React, { useState } from 'react';
+import React from 'react';
 
-const Form = () => {
-
-    const [form, setForm] = useState('')
-
-    const onChange = (e) => {
-      setForm(e.target.value);
-    }
+const Form = ({ form, onChange }) => {
 
     return (
         <div>
@@ -16,6 +10,7 @@ const Form = () => {
                 <input id="date" type="date" onChange={onChange} value={form.value} />
             </form>
             { form ? <p>Results:</p> : <p>Please enter a date</p>}
+            { form ? <p>Some data will be diaplayed here soon.</p> : ''}
         </div>
     )
 }
