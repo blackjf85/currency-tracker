@@ -19,3 +19,7 @@ Changelog
 - Removed the onSubmit handler, anticipating that we will be displaying data dynamically as user enters a date rather than making them submit the form each time.
 
 -Added very basic styling to the form
+
+07/26/2021:
+
+-Finished form element sans-styling.

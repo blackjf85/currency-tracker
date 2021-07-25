@@ -4,19 +4,18 @@ import React, { useState } from 'react';
 
 const Form = () => {
 
-    const [date, setDate] = useState('')
+    const [form, setForm] = useState('')
 
     const onChange = (e) => {
-      setDate(e.target.value);
-      console.log(e.target.value)
+      setForm(e.target.value);
     }
 
     return (
         <div>
-            <form>
-                <input id="date" type="date" onChange={onChange} value={date.value} />
+            <form id="date">
+                <input id="date" type="date" onChange={onChange} value={form.value} />
             </form>
-            { date ? <h1>{date}</h1> : <h1>Please enter a date</h1>}
+            { form ? <p>Results:</p> : <p>Please enter a date</p>}
         </div>
     )
 }
