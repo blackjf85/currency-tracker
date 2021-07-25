@@ -23,3 +23,4 @@ Changelog
 07/26/2021:
 
 -Finished form element sans-styling.
+-Moved state into App from Form component in order to access it in future components.
