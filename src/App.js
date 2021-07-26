@@ -12,33 +12,22 @@ const API_KEY = process.env.REACT_APP_API_KEY
 
 function App() {
 
-  const initialDateValue = {
-    date: ""
-  }
-
-  const [form, setForm] = useState(initialDateValue)
+  const [form, setForm] = useState('')
 
   useEffect(() => {
+    if (form)
     axios
-        .get(`${BASE_URL}${form}?access_key=${API_KEY}`)
+        .get(`${BASE_URL}${[form]}?access_key=${API_KEY}`)
         .then(res => {
-            console.log(res)
+            console.log(res.data)
         })
         .catch(err => {
             console.log(err)
         })
-}, [])
+}, [form])
 
-  // const formChange = (e) => {
-  //   setForm(e.target.value);
-  // }
-
-  const formChange = evt => {
-    const { name, value} = evt.target
-    setForm({ 
-      ...form,
-      [name]: value
-     })
+  const formChange = (e) => {
+    setForm(e.target.value);
   }
 
   return (

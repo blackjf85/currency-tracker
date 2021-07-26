@@ -23,4 +23,7 @@ Changelog
 07/26/2021:
 
 -Finished form element sans-styling.
+
 -Moved state into App from Form component in order to access it in future components.
+
+-set up basic useEffect hook. It is currently taking arguments from the form component to complete the api endpoint url and returning objects in the console after making the call (upon form update).
