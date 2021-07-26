@@ -9,7 +9,6 @@ const Form = ({ form, onChange }) => {
             <form id="date">
                 <input id="date" type="date" onChange={onChange} value={form.value} />
             </form>
-            <h1>{form}</h1>
         </div>
     )
 }
