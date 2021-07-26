@@ -3,9 +3,9 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
+        <header>
             <h1>Currency Tracker</h1>
-        </div>
+        </header>
     )
 }
 
